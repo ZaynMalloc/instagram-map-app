@@ -1,0 +1,41 @@
+{
+  "name": "instagram-map-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js webpack.config.js",
+    "dev": "npm run lint && webpack-dev-server",
+    "prod": "npm run clean && NODE_ENV=production webpack -p",
+    "clean": "rimraf ./dist/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "",
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-preset-es2015": "",
+    "babel-preset-react": "",
+    "css-loader": "",
+    "eslint": "",
+    "eslint-config-standard": "",
+    "eslint-config-standard-react": "",
+    "eslint-loader": "",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "",
+    "eslint-plugin-react": "",
+    "eslint-plugin-standard": "",
+    "extract-text-webpack-plugin": "",
+    "html-webpack-plugin": "",
+    "node-sass": "",
+    "react": "",
+    "react-dom": "",
+    "rimraf": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "webpack": "",
+    "webpack-dev-server": ""
+  }
+}
