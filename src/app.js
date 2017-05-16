@@ -1,4 +1,5 @@
 import React from 'react'
+import {render} from 'react-dom'
 
 class Hello extends React.Component {
   render () {
@@ -10,4 +11,6 @@ class Hello extends React.Component {
   }
 }
 
-export default Hello
+render(
+  <Hello />, document.getElementById('root')
+)
