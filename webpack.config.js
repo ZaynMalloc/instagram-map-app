@@ -1,4 +1,3 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var webpack = require('webpack')
 var path = require('path')
@@ -46,10 +45,6 @@ module.exports = {
     open: true
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      hash: true,
-      template: './src/index.html'
-    }),
     new ExtractTextPlugin({
       filename: 'app.css',
       disable: !isProd,
