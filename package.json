@@ -7,7 +7,8 @@
     "lint": "eslint src/**/*.js webpack.config.js",
     "dev": "npm run lint && webpack-dev-server",
     "prod": "npm run clean && NODE_ENV=production webpack -p",
-    "clean": "rimraf ./dist/*"
+    "clean": "rimraf ./dist/*",
+    "test": "jest --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -37,5 +38,14 @@
     "style-loader": "",
     "webpack": "",
     "webpack-dev-server": ""
+  },
+  "jest": {
+        "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+        "unmockedModulePathPatterns": [
+            "<rootDir>/node_modules/react",
+            "<rootDir>/node_modules/react-dom",
+            "<rootDir>/node_modules/react-addons-test-utils",
+            "<rootDir>/node_modules/fbjs"
+        ]
   }
 }
