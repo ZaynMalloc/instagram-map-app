@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var HtmlWebPackPlugin = require('html-webpack-plugin')
 var webpack = require('webpack')
 var path = require('path')
 
@@ -17,7 +18,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+    filename: 'app.bundle.js'
   },
   module: {
     rules: [
@@ -51,7 +52,11 @@ module.exports = {
       allChunks: true
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    new HtmlWebPackPlugin({
+      filename: 'index.html',
+      template: path.join(__dirname, 'src/index.html')
+    })
   ]
 }
 /* eslint-disable eol-last */
