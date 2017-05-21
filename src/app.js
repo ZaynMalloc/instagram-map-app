@@ -8,11 +8,10 @@ class Hello extends React.Component {
     return (
       <div>
         <h1>Hello from React !</h1>
-        <FormControl
-          type='text'
-          placeholder='Search'
-        />
-        <Button bsStyle='primary'>Search</Button>
+        <span>
+          <FormControl type='text' placeholder='Search' />
+          <Button bsStyle='primary'>Search</Button>
+        </span>
       </div>
     )
   }
