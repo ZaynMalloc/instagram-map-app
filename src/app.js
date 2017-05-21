@@ -1,6 +1,6 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Button} from 'react-bootstrap'
+import {Button, FormControl} from 'react-bootstrap'
 import './app.scss'
 
 class Hello extends React.Component {
@@ -8,6 +8,10 @@ class Hello extends React.Component {
     return (
       <div>
         <h1>Hello from React !</h1>
+        <FormControl
+          type='text'
+          placeholder='Search'
+        />
         <Button bsStyle='primary'>Search</Button>
       </div>
     )
