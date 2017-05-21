@@ -16,7 +16,6 @@ export default class Map extends React.Component {
   render () {
     return (
       <div>
-        <h1>{this.props.zoom}</h1>
         <GoogleMapReact defaultCenter={this.props.center} defaultZoom={this.props.zoom} />
       </div>
     )

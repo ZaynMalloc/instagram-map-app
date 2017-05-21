@@ -1,19 +1,14 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {Button, Form, FormControl} from 'react-bootstrap'
 import './app.scss'
+import Bar from './bar.js'
 import Map from './map.js'
 
-class Hello extends React.Component {
+class App extends React.Component {
   render () {
     return (
       <div>
-        <Form inline>
-          <a>Instagram Gelocator</a>
-          <FormControl type='text' placeholder='Search' />
-          <Button bsStyle='primary'>Search</Button>
-          <Map />
-        </Form>
+        <Bar />
         <Map />
       </div>
     )
@@ -21,5 +16,5 @@ class Hello extends React.Component {
 }
 
 render(
-  <Hello />, document.getElementById('root')
+  <App />, document.getElementById('root')
 )
