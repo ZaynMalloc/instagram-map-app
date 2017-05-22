@@ -7,7 +7,7 @@ export default class Bar extends React.Component {
     return (
       <div>
         <Form inline>
-          <a>Instagram Gelocator</a>
+          <a>Twitter Gelocator</a>
           <FormControl type='text' placeholder='Search' />
           <Button bsStyle='primary'>Search</Button>
         </Form>
